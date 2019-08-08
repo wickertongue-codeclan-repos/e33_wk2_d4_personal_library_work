@@ -7,7 +7,12 @@ class Library
     @inventory = []
   end
 
+  def add_book_to_inventory(book)
+    @inventory.push(book)
+  end
 
-
+  def count_inventory
+    @inventory.count
+  end
 
 end
