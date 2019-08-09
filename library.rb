@@ -21,9 +21,14 @@ class Library
     @books_on_loan.push(book)
   end
 
+  def book_and_customer_to_hash(book, customer)
+    temp_book_array = []
+    temp_book_array.push(book, customer)
+    p temp_book_array
+  end
+
   def count_books_on_loan
     @books_on_loan.count
   end
-
 
 end
